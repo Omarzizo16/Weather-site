@@ -34,14 +34,14 @@ var overmorrowMinTemp = document.querySelector('.overmorrowMinTemp');
 
 
 var apiKey = 'b0389af80ef84aa4a9445301243011';
-var baseUrl='http://api.weatherapi.com/v1'
+var baseUrl='https://api.weatherapi.com/v1'
 
 form.addEventListener('submit', function(event){
     event.preventDefault();
 });
 
 async function getWeather(city) {
-    var weatherResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=b0389af80ef84aa4a9445301243011&q=${city}&days=3`)
+    var weatherResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b0389af80ef84aa4a9445301243011&q=${city}&days=3`)
     var weatherData=await weatherResponse.json();
     return weatherData;
 }
