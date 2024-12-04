@@ -1,0 +1,30 @@
+@media (max-width: 940px) {
+    .information{
+        flex-direction: column;
+    }
+    .weather-app .left-side h1{
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    .weather-app{
+        flex-direction: column;
+    }
+    .panel{
+        top: auto;
+    }
+}
+@media (max-width: 769px) {
+    .container-fluid .row >*{
+        padding: 0;
+    }
+    .panel {
+        position: relative; 
+        width: 100%;
+        max-height: 50vh;
+    }
+
+    .panel ul li {
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,127 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather</title>
+  <!--!=====> favicon -->
+  <link rel="icon" href="images/fav icon.png"/>
+  <!--! Font Awesome -->
+  <link rel="stylesheet" href="fontawesome 6/css/all.min.css" />
+  <!-- !font google  Rubik -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+      <!-- ! sweet alert  -->
+      <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+  <!-- ! bootstrap files-->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <!--! Main Style Sheet -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+  <main class="weather-app  pt-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-9 col-12">
+          <div class="left-side ">
+          <div class="header"><h2 class="brand">The Weather</h2></div>
+          <div>
+            <div class="information d-flex justify-content-center align-items-center">
+              <h1 class="temp"></h1>
+              <div class="city-time">
+                <h1 class="city-name"></h1>
+                <small>
+                  <span class="time"></span>-
+                  <span class="date"></span>
+                </small>
+              </div>
+              <div class="weather">
+                <img src="images/clear.png" alt="icon" class="icon">
+                <span class="condition"></span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-12">
+          <div class="panel">
+            <form action="" id="locationInput" class="d-flex justify-content-center align-items-center">
+              <input type="text" class="search" placeholder="Search Location">
+              <button type="button" class="location-btn">
+                <i class="fa-solid fa-location-crosshairs"></i>
+            </button>
+            </form>
+            <ul class="details list-unstyled">
+              <h4>Weather details</h4>
+              <li>
+                <span>cloudy</span>
+                <span class="cloud"></span>
+              </li>
+              <li>
+                <span>Humidity</span>
+                <span class="Humidity"></span>
+              </li>
+              <li>
+                <span>Wind</span>
+                <span class="wind"></span>
+              </li>
+            </ul>
+            <div class="days">
+              <ul class="list-unstyled justify-content-between">
+                <h3 class="tomorrow"></h3>
+                <li>
+                  <span class="tomorrowCondition"></span>
+                  <img src="images/clear.png" alt="icon" class="tomorrow-icon">
+                </li>
+                <li class="d-flex justify-content-between">
+                  <span >MAX Temp</span>
+                  <p class="tomorrowMaxTemp"> 
+                    <i class="fa-solid fa-temperature-high"></i>
+                  </p>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <span >MIN Temp</span>
+                  <p class="tomorrowMinTemp"> 
+                    <i class="fa-solid fa-temperature-low"></i>
+                  </p>
+                </li>
+              </ul>
+          </div>
+            <div class="days">
+              <ul class="list-unstyled justify-content-between border-bottom-0">
+                <h3 class="overmorrow"></h3>
+                <li>
+                  <span class="overmorrowCondition"></span>
+                  <img src="images/clear.png" alt="icon" class="overmorrow-icon">
+                </li>
+                <li class="d-flex justify-content-between">
+                  <span >MAX Temp</span>
+                  <p class="overmorrowMaxTemp"> 
+                    <i class="fa-solid fa-temperature-high"></i>
+                  </p>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <span >MIN Temp</span>
+                  <p class="overmorrowMinTemp"> 
+                    <i class="fa-solid fa-temperature-low"></i>
+                  </p>
+                </li>
+              </ul>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
